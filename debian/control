@@ -1,0 +1,26 @@
+Source: python-autopage
+Section: python
+Priority: optional
+Maintainer: Debian OpenStack <team+openstack@tracker.debian.org>
+Uploaders:
+ Thomas Goirand <zigo@debian.org>,
+Build-Depends:
+ debhelper-compat (= 11),
+ dh-python,
+ openstack-pkg-tools,
+ python3-all,
+ python3-setuptools,
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/openstack-team/python/python-autopage
+Vcs-Git: https://salsa.debian.org/openstack-team/python/python-autopage.git
+Homepage: https://github.com/zaneb/autopage
+
+Package: python3-autopage
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+Description: library to provide automatic paging for console output
+ Autopage is a library to automatically display terminal output from a program
+ in a pager (like less) whenever you need it, and never when you don't. And it
+ only takes one line of code.

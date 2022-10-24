@@ -1,0 +1,20 @@
+Description: Add missing setup.py
+Author: Thomas Goirand <zigo@debian.org>
+Forwarded: no
+Last-Update: 2021-08-25
+
+Index: python-autopage/setup.py
+===================================================================
+--- /dev/null
++++ python-autopage/setup.py
+@@ -0,0 +1,10 @@
++"""Setup.py entry point for package.
++
++Configuration is handled by setuptools>30.3.0 through setup.cfg.
++https://setuptools.readthedocs.io/en/latest/setuptools.html#metadata
++https://setuptools.readthedocs.io/en/latest/setuptools.html#options
++"""
++
++from setuptools import setup
++
++setup()
